@@ -1,0 +1,9 @@
+site_name: Pointslocal Admin Documentation
+
+pages:
+- Home: index.md
+- Creating Pages:
+  - Fuh: index.md
+- Events:
+  - Importing Events: events_imports.md
+  - Exporting Events: events_exports.md
