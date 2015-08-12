@@ -3,7 +3,13 @@ site_name: Pointslocal Admin Documentation
 pages:
 - Home: index.md
 - Creating Pages:
-  - Fuh: index.md
+  - Stream Templates: content_templates.md
 - Events:
+  - Managing Events: events_events.md
+  - Managing Venues: events_venues.md
+  - Managing Categories and Ontologies: events_categories.md
+  - Creating Editorial Packages: events_packages.md
   - Importing Events: events_imports.md
   - Exporting Events: events_exports.md
+  - Other Content Types:
+      - Sports: sports_exports.md

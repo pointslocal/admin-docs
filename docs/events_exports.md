@@ -111,6 +111,8 @@ The document itself specifies desired formats, API options and export options br
   - **published** ```bool``` If set to true, will only show events set to web published.  If unset will show all events.
   - **print_published** ```array``` If set to true, will only return events set to print published. If unset all events will be returned.
   - **start** Uses a fairly tolerant natural language value to describe the first date to return events.  Examples: "this Wednesday" or "tomorrow" or "Feb 5, 2015"
+  - **source** ```string``` The event's source, as visible in the events list itself.
+  - **user** ```string``` The username of the user that created the event.
   - **end** Same as **start**, but for the end of the range
 
 ####Configuration
