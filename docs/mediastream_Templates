@@ -1,0 +1,3 @@
+In order to customize the appearance of various “streams” you will need to create “templates” and , optionally, “Element Templates”. Stream templates are include all of the main design elements of a page while “Element Templates” allow you to customize the styles for individual elements inserted via the “Stream Designer”.
+
+1. Login to the Pointslocal Admin 
