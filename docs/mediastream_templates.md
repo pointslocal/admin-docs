@@ -1,7 +1,7 @@
-##Create Or Modify Media Streams
+# Create Or Modify Media Streams
 In order to customize the appearance of various “streams” you will need to create “templates” and , optionally, “Element Templates”. Stream templates are include all of the main design elements of a page while “Element Templates” allow you to customize the styles for individual elements inserted via the “Stream Designer”.
 
-1. Login to the Pointslocal Admin 
+1. Login to the Pointslocal Admin
 Pointslocal Step by Step Stream Setup
 
 1. Login - http://sitecode.pointslocal.com/admin:
@@ -37,11 +37,11 @@ Note: Mousing over the icon will provide explanations of different element types
 
 7. Each element type has different configuration options with the exception of adding html (which you might use to insert a video widget or ad tag e.g.). 
 
-To configure the element click on the edit element icon 
+To configure the element click on the edit element icon
 
 Some recurring options include Ontology, which filters on manual or automatically tagged ontologies and Image Crop Mode, which allows you to specify auto crop options
 
-8. Preview your Stream by electing the preview icon in the upper right: 
+8. Preview your Stream by electing the preview icon in the upper right:
 9. Save your Stream by electing the  save icon:
 10. Returning to the list of available Streams you can perform a number of edits that directly bypass the navigation required in creating them.
 
