@@ -13,3 +13,10 @@ pages:
   - Exporting Events: events_exports.md
   - Other Content Types:
       - Sports: sports_exports.md
+
+- API:
+  - Events:
+    - /api/v1/events: api_events_events.md
+    - /api/v1/venues: api_events_venues.md
+    - /api/v1/event_categories: api_events_categories.md
+    - /api/v1/event_tags: api_events_tags.md
