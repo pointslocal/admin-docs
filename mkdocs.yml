@@ -6,7 +6,6 @@ pages:
   - Stream Templates: mediastream_templates.md
 - Events:
   - Managing Events: events_events.md
-  - Importing Events: events_imports.md
   - Exporting Events: events_exports.md
   - Other Content Types:
       - Sports: sports_exports.md
