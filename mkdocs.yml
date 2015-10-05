@@ -10,7 +10,7 @@ pages:
   - Other Content Types:
       - Sports: sports_exports.md
 - API:
-  - api.md
+  - The API: api.md
   - Events:
     - /api/v1/events: api_events_events.md
     - /api/v1/venues: api_events_venues.md
