@@ -7,8 +7,10 @@ API endpoint for requesting events, returning only events which have a date asso
 - start ```string``` - Event start date
 - end ```string``` - Event end date.  Completes start <-> end range.
 - date ```string``` - Event's date
+- range ```string``` - Start and end dates separated by '-'.  Example: 20010101-20010102
 - category ```string``` - Returns events in category by category GUID
 - featured ```int``` - Returns currently featured events if set to 1. Default: 0
+- venue_guid ```int``` - Returns events from a specified venue
 
 ##### Response Parameters
 - title ```string``` - Event's title
@@ -16,9 +18,10 @@ API endpoint for requesting events, returning only events which have a date asso
 - print_description ```string``` - Print description if available.  Will return **description** if null or empty.
 - guid ```string``` - Event's GUID
 - image_id ```int``` - Event image ID
-- date ** [ string``` - Event start date in Mon DD, YYYY format
-- start_time ** [ timestamp ] ** - Event's start time in Unix epoch
-- end_time ** [ timestamp ] **
+- date ```string``` - Event start date in Mon DD, YYYY format
+- start_time ```timestamp``` - Event's start time in Unix epoch
+- end_time ```timestamp```
+- venue_id ```int``` - Event's venue ID
 
 ## /api/v1/events/[:id]
 Requests a specific event
