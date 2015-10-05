@@ -12,6 +12,7 @@ API endpoint for requesting events, returning only events which have a date asso
 - featured ```int``` - Returns currently featured events if set to 1. Default: 0
 - venue_guid ```int``` - Returns events from a specified venue
 
+
 ##### Response Parameters
 - title ```string``` - Event's title
 - description ```string``` - Full description for event.
