@@ -1,5 +1,4 @@
 # /api/v1/players
-### GET
 
 ##### Request Parameters
 - **search** ``` string ``` - Freeform search text, matches player's name or school

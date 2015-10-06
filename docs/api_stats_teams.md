@@ -1,5 +1,4 @@
 # /api/v1/teams
-### GET
 
 ##### Request Parameters
 - **sport** ``` string ``` - Requested sport

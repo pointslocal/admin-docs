@@ -1,5 +1,4 @@
 # /api/v1/schools
-### GET
 
 ##### Request Parameters
 - **search** ``` string ``` - Freeform search text matches school name or mascot
