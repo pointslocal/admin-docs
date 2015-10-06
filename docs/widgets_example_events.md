@@ -1,6 +1,16 @@
-widgets_example_events.md
+# Example Widgets
+> The following widgets are created utilizing jQuery and Pagu.  Neither are required, but demonstrate a simple application of the API :: Widget pipeline.
 
-<b>WAWAA</b>
-<h1>haeoaoe</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script href="http://cdn.pointslocal.com/pagu.min.js" type="text/javascript"></script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0OGZMfVQROY" frameborder="0" allowfullscreen></iframe>
+## Events This Week
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script href="http://cdn.pointslocal.com/pagu.min.js" type="text/javascript"></script>
+```
+
+<script>
+var template = '<div><h3>Happening This Week</h3></div>';
+alert('test');
+</script>
