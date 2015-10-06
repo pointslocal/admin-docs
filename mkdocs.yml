@@ -18,3 +18,8 @@ pages:
     - /api/v1/event_tags: api_events_tags.md
   - Sports:
     - /api/v1/sports: api_stats_sports.md
+    - /api/v1/standings: api_stats_standings.md
+    - /api/v1/games: api_stats_games.md
+    - /api/v1/teams: api_stats_teams.md
+    - /api/v1/players: api_stats_players.md
+    - /api/v1/schools: api_stats_schools.md
