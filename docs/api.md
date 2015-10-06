@@ -1,6 +1,6 @@
 # Pointslocal API
 
-The Pointslocal API is a RESTful API that drives a number of services including admin and widgets.
+> The Pointslocal API is a RESTful API that drives a number of services including admin and widgets.
 
 ##### Request Parameters
 - **api_key** ```string``` - Your application's API key.  This is required for some GET requests and all POST/PUT/DELETE requests

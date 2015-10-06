@@ -16,6 +16,8 @@ pages:
     - /api/v1/venues: api_events_venues.md
     - /api/v1/event_categories: api_events_categories.md
     - /api/v1/event_tags: api_events_tags.md
+  - Stories:
+    - /api/v1/stories: api_content_stories.md
   - Sports:
     - /api/v1/sports: api_stats_sports.md
     - /api/v1/standings: api_stats_standings.md
@@ -23,3 +25,7 @@ pages:
     - /api/v1/teams: api_stats_teams.md
     - /api/v1/players: api_stats_players.md
     - /api/v1/schools: api_stats_schools.md
+- Widgets:
+  - Creating widgets: widgets.md
+  - Examples:
+    - Events List: widgets_example_events.md

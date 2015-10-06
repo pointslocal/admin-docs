@@ -1,6 +1,6 @@
 # /api/v1/events
 
-API endpoint for requesting events, returning only events which have a date associated with them.
+> API endpoint for requesting events, returning only events which have a date associated with them.
 
 ##### Request Parameters
 - guid ```string``` - Event date's GUID.  This is a reference to an individual recursion's GUID, not the overall event
@@ -19,9 +19,9 @@ API endpoint for requesting events, returning only events which have a date asso
 - print_description ```string``` - Print description if available.  Will return **description** if null or empty.
 - guid ```string``` - Event's GUID
 - image_id ```int``` - Event image ID
-- date ```string``` - Event start date in Mon DD, YYYY format
-- start_time ```timestamp``` - Event's start time in Unix epoch
-- end_time ```timestamp```
+- date ```string``` - Event date in requested or default format ([see main API options](api.md))
+- start_time ```timestamp``` - Event's start time in requested or default format ([see main API options](api.md))
+- end_time ```timestamp``` - Event's end time in requested or default format ([see main API options](api.md))
 - venue_id ```int``` - Event's venue ID
 
 ## /api/v1/events/[:id]

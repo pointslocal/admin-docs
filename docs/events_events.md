@@ -1,4 +1,6 @@
 # Managing Events
+> This guid explains the basics of events management and curation.
+
 Managing the details of individual events is handled primarily through two interfaces in the admin - the events list and the events details views. The former is for finding events and/or applying bulk actions and the latter for modifying more minute details and meta data around individual events and their recurrences.
 
 # The Events List
