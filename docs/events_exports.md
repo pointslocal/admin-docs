@@ -1,5 +1,5 @@
 # Exporting Events
-> This guid will show you how to get your events out of Pointslocal, for use in another CMS, for syndication or for reverse print publication.
+> This guide will show you how to get your events out of Pointslocal, for use in another CMS, for syndication or for reverse print publication.
 
 Getting event data _in_ to Pointslocal involves a number of different types of variable formats and processes.  At some point you may be interested in getting that data _out_, possibly for print exports or integrations with another calendar system. Exporting all data (including Events) is handled by way of two components:
 

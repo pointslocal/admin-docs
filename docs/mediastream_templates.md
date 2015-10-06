@@ -1,4 +1,6 @@
 # Create Or Modify Media Streams
+> This guide will show you how pages - or "media streams" - are created in Pointslocal.
+
 In order to customize the appearance of various “streams” you will need to create “templates” and , optionally, “Element Templates”. Stream templates are include all of the main design elements of a page while “Element Templates” allow you to customize the styles for individual elements inserted via the “Stream Designer”.
 
 1. Login to the Pointslocal Admin
@@ -10,7 +12,7 @@ Pointslocal Step by Step Stream Setup
 4. Name your template and assign the desired URL rewrite if applicable:
 5. Insert your desired HTML:
 Note: Header and footer are not both required but provided as many organizations provide “wrappers” in this convention.
-6. Within the HTML insert, “<[content-group:1]>, <[content-group:2]> and so on in any location you want to be available for dynamic content in the visual designer:
+6. Within the HTML insert, ```<[content-group:1]>```, ```<[content-group:2]>``` and so on in any location you want to be available for dynamic content in the visual designer:
 7. Select “Edit Stream Template” at the bottom of the page to save:
 
 Your template is now saved and available for selection on the creation of new streams. You can modify existing templates by selecting them from the list of available templates, making changes and selecting “Edit Stream Template”
@@ -30,7 +32,7 @@ Note on the right the choice of element types and the wide array of dynamic elem
 2. Select “New Stream”
 3. Name your new stream (and modify rewrite if desired) and select the desired template to be attached to the Stream:
 4. Select the Stream Designer icon in the row of the stream you wish to create or edit”
-5.  You will now see the template you created rendered with dotted boxes in all the locations you made available for dynamic content by including the “<[content-group:X]> tag:
+5.  You will now see the template you created rendered with dotted boxes in all the locations you made available for dynamic content by including the ```<[content-group:X]>``` tag:
 6. To insert content into those boxes simply select the desired type represented by the icons available in the top bar and drag the icon to the desired content group box:
 
 Note: Mousing over the icon will provide explanations of different element types.
