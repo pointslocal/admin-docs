@@ -10,6 +10,7 @@ The Pointslocal API is a RESTful API that drives a number of services including 
 - **format** ```enum``` - Accepts ```xml``` or ```json``` with the latter being the default
 - **count** ```int``` - Number of results per page to return
 - **page** ```int``` - Page of results to return (index = page * count)
+- **field_map** ```json``` - Allows you to change the response fields to match a schema.  As an example, if a response includes **title** in each item, you can replace that with **name** by supplying a URL-encoded field_map={"title":"name"} parameter.  The field map can also be set globally per publication under Admin :: Publications :: Settings
 
 ##### Response Parameters
 - **items** ```array``` - All GET requests will return responses in an ```items``` array, even if only one record is impacted or requested
