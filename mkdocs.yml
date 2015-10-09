@@ -11,6 +11,7 @@ pages:
       - Sports: sports_exports.md
 - API:
   - The API: api.md
+  - Constructing Images: images.md
   - Events:
     - /api/v1/events: api_events_events.md
     - /api/v1/venues: api_events_venues.md
