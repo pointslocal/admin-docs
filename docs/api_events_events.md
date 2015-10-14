@@ -14,6 +14,11 @@
 - **venue_guid** ```int``` - Returns events from a specified venue
 - **tag** ```string``` - Returns events with specified tag
 - **published** ```int``` - Returns events that are published by default or with value 1.  If set to 0 will display unpublished.  Default: 1
+- **latitude** ```float``` - Searches within longitude/latitude if paired radius.
+- **longitude** ```float``` - Searches within longitude/latitude if paired with radius.
+- **radius** ```float``` - A radius (in miles) that, when paired with latitude and longitude, returns results in a medium bounding rectangle.
+- **neighborhood_id** ```int``` - Restricts results to spatial containment of given neighborhood.  [See neighborhood API](api_places_neighborhoods.md)
+- **movie** ```int``` - If set to 1, returns movie results.
 - **recurrences** ```int``` - Returns future recurrences of event.  Note: this can slow down requests if an event has many recurrences.
 
 ##### Response Parameters
