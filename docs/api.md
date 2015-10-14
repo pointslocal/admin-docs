@@ -18,3 +18,4 @@
 
 ##### Response Parameters
 - **items** ```array``` - All GET requests will return responses in an ```items``` array, even if only one record is impacted or requested
+- **pages** ```int``` - Returns the number of pages available for current query
