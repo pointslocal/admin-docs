@@ -18,5 +18,3 @@
 
 ##### Response Parameters
 - **items** ```array``` - All GET requests will return responses in an ```items``` array, even if only one record is impacted or requested
-
-### Accessing Images
