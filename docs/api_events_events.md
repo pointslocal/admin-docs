@@ -37,6 +37,8 @@
 - **category_id** ```int``` - Event's *primary* category
 - **categories** ```array``` - A list of other associated categories
 - **tags** ```array``` - A list of tags associated with event
+- **movie_guid** ```string``` - If ```movie=1``` is set, will return internal GUID of movie
+- **movie_id** ```int``` - If ```movie=1``` is set, will return numerical ID of movie ([see movie API options](api_events_movies.md))
 
 ## /api/v1/events/[:id]
 Requests a specific event
