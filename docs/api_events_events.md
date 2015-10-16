@@ -25,6 +25,9 @@
 - **title** ```string``` - Event's title
 - **description** ```string``` - Full description for event.
 - **print_description** ```string``` - Print description if available.  Will return **description** if null or empty.
+- **address** ```string``` - Event's address
+- **latitude** ```float``` - Event's latitude
+- **longitude** ```float``` - Event's longitude
 - **guid** ```string``` - Event's GUID
 - **image_id** ```int``` - Event image ID
 - **date** ```string``` - Event date in requested or default format ([see main API options](api.md))
@@ -33,6 +36,9 @@
 - **url** ```string``` - Event's URL
 - **phone** ```string``` - Event's phone
 - **venue_id** ```int``` - Event's venue ID
+- **venue_guid** ```string``` - Event's venue GUID
+- **venue_name** ```string``` - Event's venue
+- **venue_address** ```string``` - Event's venue address.  This may be the same as ```address``` unless it is overridden for the event.
 - **recurrences** ```array``` - A list of future recurrences, if requested with recurrences=1
 - **category_id** ```int``` - Event's *primary* category
 - **categories** ```array``` - A list of other associated categories
