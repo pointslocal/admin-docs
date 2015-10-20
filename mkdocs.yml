@@ -17,6 +17,8 @@ pages:
     - /api/v1/venues: api_events_venues.md
     - /api/v1/event_categories: api_events_categories.md
     - /api/v1/event_tags: api_events_tags.md
+    - /api/v1/movies: api_events_movies.md
+    - /api/v1/showtimes: api_events_showtimes.md
   - Geography:
     - /api/v1/neighborhoods: api_places_neighborhoods.md
   - Stories:
