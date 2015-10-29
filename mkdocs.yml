@@ -9,6 +9,7 @@ pages:
   - Managing Categories:
     - Managing Categories and Stock Art: events_categories_art.md
   - Exporting Events: events_exports.md
+  - Importing Events: events_imports.md
   - Other Content Types:
       - Sports: sports_exports.md
 - API:
