@@ -1,5 +1,11 @@
 # Importing Events and Configuring Scrapers
 
+### Types of Imports
+Events can be imported via RSS, an API (with defined rules), a Google calendar URL or an iCal location.
+
+### Using the Visual Selector
+> The visual selector tool allows you to point and click at elements in the schema (title, description, date, etc.)  In some cases it can extract exactly what you want without any further work.
+
 ### Scraping Manifests
 > All scraping processes are defined by configuration files called 'manifests.'  These are JSON files that utilize the following structure
 
@@ -41,8 +47,8 @@
             "field": "[name of field]",
             "element": "[DOM element of field]",
             "attribute": "[If the value is contained in an element's attribute]",
-            "refine": [true/false, whether this represents a link to a detail page],
-            "multiple": [true/false, whether to retain all matches],
+            "refine": "[true/false, whether this represents a link to a detail page]",
+            "multiple": "[true/false, whether to retain all matches]",
             "filters": [
 
             ]
@@ -65,3 +71,14 @@ Filters can be stacked and are called in the order they are defined.  As an exam
 * ```split``` - Allows turning a field value into an array by splitting by character
 * ```javascript``` - Allows manipulation of current data using Javascript.  Current value is accessed by and stored as ```$V```
 * ```lookup``` - Converts current value to predefined value using values from lookups
+
+### Examples with options
+#### textMustMatch
+```{ "type": "textMustMatch", "value": "[text to match]", "options": []}```
+
+#### replace
+```{ "type": "replace", "options": ["find":"regex to find", "replace":"replacement string","noquote":(1|0)]}```
+The option ```noquote``` is set to 1 if the ```find``` value should not be escaped.  For example, if you're using a regular expression with special characters such as \d, \w, {}, (), etc. 
+
+#### javascript
+```{ "type": "javascript", "value":"$V = $V.toUpperCase();" }```
