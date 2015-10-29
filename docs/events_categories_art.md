@@ -10,7 +10,7 @@ The list will provide a few actions and pieces of information about each categor
 Clicking on the number under Events column will take you to the events list page filtered to that category.
 
 # Editing a Category
-When editing a category, you have access to modify the category from the top down.  The name, GUID (useful for SEO purposes) and the heirarchical parent category can be modified directly.  Choosing an Ontology from the dropdown will provide some additional hinting for natural language processing.  This can help automatically tag or suggest categories for user-submitted events.
+When editing a category, you have access to modify the category from the top down.  The name, GUID (useful for SEO purposes) and the hierarchical parent category can be modified directly.  Choosing an Ontology from the dropdown will provide some additional hinting for natural language processing.  This can help automatically tag or suggest categories for user-submitted events.
 
 ![Managing Categories](img/events_categories_manage.png)
 
