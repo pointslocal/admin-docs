@@ -8,6 +8,7 @@
 - **end** ```string``` - Event end date.  Completes start <-> end range.
 - **date** ```string``` - Event's date
 - **range** ```string``` - Start and end dates separated by '-'.  Example: 20010101-20010102
+- **when** ```string``` - Accepts natural language relative dates like ```this week``` or ```next month```
 - **category** ```string``` - Returns events in category by category GUID [See category API](api_events_categories.md)
 - **category_id** ```int``` - Returns events from this category. [See category API](api_events_categories.md)
 - **featured** ```int``` - Returns currently featured events if set to 1. Default: 0
