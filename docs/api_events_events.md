@@ -11,6 +11,7 @@
 - **category** ```string``` - Returns events in category by category GUID [See category API](api_events_categories.md)
 - **category_id** ```int``` - Returns events from this category. [See category API](api_events_categories.md)
 - **featured** ```int``` - Returns currently featured events if set to 1. Default: 0
+- **popular** ```int``` - Returns the most popular events if set to 1.  Default: 0
 - **venue_guid** ```int``` - Returns events from a specified venue
 - **tag** ```string``` - Returns events with specified tag
 - **published** ```int``` - Returns events that are published by default or with value 1.  If set to 0 will display unpublished.  Default: 1
