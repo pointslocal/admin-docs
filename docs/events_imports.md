@@ -13,6 +13,8 @@ Events can be imported via RSS, an API (with defined rules), a Google calendar U
 {
     "name": "[Name of Import]",
     "method": "[HTTP Method, typically GET or POST]",
+    "querystring": "[For POST, allows you to add form values]",
+    "body": "[For POST, send body data]",
     "root-url": "[Starting URL]",
     "encapsulate-element": "[DOM element that matches events on a page]",
     "refine-encapsulate-element": "[DOM element that matches events on a details page]",
