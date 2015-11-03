@@ -8,3 +8,4 @@
 - **context** ```enum``` - A context for the image type.  General detail on each context type can be found within respective API pages.
 - **cropmode** ```enum``` - A style of crop to return.  ```topbias``` will yield to the top of the image, ```botbias``` will yield to the bottom and ```featbias``` will attempt to detect features and bias to capture that centroid.  If ```featbias``` fails, the crop mode will revert to the x/y center of the image.
 - **effect** ```enum``` - Applies a visual effect to the image.  Currently supports "darkgradient" which applies a midpoint to bottom of image darkening gradient over the image.
+- **trim** ```int``` - If set to 1, will attempt to automatically remove stray whitespace around an image.
