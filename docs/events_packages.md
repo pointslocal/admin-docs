@@ -1,1 +1,1 @@
-# Creating Editorial Packages
+# Managing Editorial Packages
