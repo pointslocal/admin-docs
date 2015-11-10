@@ -9,5 +9,13 @@ The package header contains three simple components: a title, a subtitle or kick
 ### Venues
 If implemented, this section allows you to aggregate and order venues for a particular category.  This is useful for cuisine-specific dining guides, best music venues or best bars, etc.
 
+#### Example: Best Nightlife in Los Angeles
+
 ### Events
 The events section is usually used to provide time-sensitive curated lists of things to do for a certain period.  It can also be used to outline "evergreen" or non-date-specific things to do like "Swimming in Barton Springs" or "Take The Kids To MOMA"
+
+#### Example: Best Christmas Events
+
+### Stories
+
+#### Example: Best Concerts of 2015
