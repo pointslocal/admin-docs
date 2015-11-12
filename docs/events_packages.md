@@ -7,7 +7,10 @@
 The package header contains three simple components: a title, a subtitle or kicker and an optional background image.  This gives you a chance to quickly outline what the package consists of.
 
 ![Changing Header Details](img/event_packages_edit-header.gif)
+
 To edit the title and subtitle/description, you can simply start writing in the sections Package Title and Description of event package.
+
+Directly beneath the header section, there is the text section. This allows you to write an editorial introduction to the listicle/content below.
 
 ### Venues
 If implemented, this section allows you to aggregate and order venues for a particular category.  This is useful for cuisine-specific dining guides, best music venues or best bars, etc.
