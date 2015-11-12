@@ -3,6 +3,8 @@
 > API endpoint for requesting events, returning only events which have a date associated with them.  Images URLs can be created utilizing the [image construction documentation](images.md) using the context ```event.image```
 
 ##### Request Parameters
+- **search** ```string``` - Freeform search text, which will match against title, description and venue.
+- **fuzzsearch** ```string``` - A fuzzier search than ```search```, which will also search categories, tags and addresses.
 - **guid** ```string``` - Event date's GUID.  This is a reference to an individual recursion's GUID, not the overall event
 - **start** ```string``` - Event start date
 - **end** ```string``` - Event end date.  Completes start <-> end range.
