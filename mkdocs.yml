@@ -13,6 +13,8 @@ pages:
   - Importing Events: events_imports.md
   - Other Content Types:
       - Sports: sports_exports.md
+- Stories:
+  - Managing and Creating Stories: stories_create.md
 - API:
   - The API: api.md
   - Constructing Images: images.md
