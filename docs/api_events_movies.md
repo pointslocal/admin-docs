@@ -4,7 +4,8 @@
 
 ##### Request Parameters
 - **guid** ```string``` - Event date's GUID.  This is a reference to an individual recursion's GUID, not the overall event
-
+- **search** ```string``` - Searches event's title only.
+- **fuzzsearch** ```string``` - Expands ```search``` into description, cast, directors.
 
 ##### Response Parameters
 - **id** ```int``` - Internal ID

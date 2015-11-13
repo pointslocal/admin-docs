@@ -4,8 +4,8 @@
 
 ##### Request Parameters
 - **guid** ```string``` - Movie's GUID
-- **id** ```int``` - Movie's ID
-- **venue_id** ```int``` - Theater's ID
+- **movie_id** ```int``` - Movie's ID
+- **theater_id** ```int``` - Theater's ID
 - **date** ```string``` - Date for showtimes.  Accepts general, natural language dates
 
 ##### Response Parameters
