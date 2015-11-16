@@ -21,6 +21,7 @@ pages:
   - Events:
     - /api/v1/events: api_events_events.md
     - /api/v1/venues: api_events_venues.md
+    - /api/v1/theaters: api_events_theaters.md
     - /api/v1/event_categories: api_events_categories.md
     - /api/v1/event_tags: api_events_tags.md
     - /api/v1/movies: api_events_movies.md

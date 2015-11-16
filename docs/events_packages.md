@@ -16,12 +16,15 @@ Directly beneath the header section, there is the text section. This allows you 
 If implemented, this section allows you to aggregate and order venues for a particular category.  This is useful for cuisine-specific dining guides, best music venues or best bars, etc.
 
 #### Example: Best Nightlife in Los Angeles
+In this example, we generate a best-of list for nightlife (bars, clubs, parties) in L.A.
 
 ### Events
 The events section is usually used to provide time-sensitive curated lists of things to do for a certain period.  It can also be used to outline "evergreen" or non-date-specific things to do like "Swimming in Barton Springs" or "Take The Kids To MOMA"
 
 #### Example: Best Christmas Events
+In this example, we're looking at a temporal listicle, one with a limited shelf-life.  Since all the events included are Christmas-related and bound to finite event, this content does not have a lot of ongoing value.
 
 ### Stories
 
 #### Example: Best Concerts of 2015
+In this example, we'll look at a retrospective collection of events, which allows you to turn otherwise stale, event-based content into something with more lasting edtiorial appeal.
