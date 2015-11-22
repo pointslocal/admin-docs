@@ -20,6 +20,7 @@ pages:
   - Constructing Images: images.md
   - Events:
     - /api/v1/events: api_events_events.md
+    - /api/v1/events/[:id]/dates: api_events_dates.md
     - /api/v1/venues: api_events_venues.md
     - /api/v1/theaters: api_events_theaters.md
     - /api/v1/event_categories: api_events_categories.md
