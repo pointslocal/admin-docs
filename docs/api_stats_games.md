@@ -6,6 +6,10 @@
 ##### Response Parameters
 - **guid** ``` string``` - Games internal GUID
 - **game_id** ``` int``` - Integer ID of game, for requesting games by ID
+- **away_nickname** ```string``` - Away team's nickname
+- **away_name** ```string``` - Away team's name / school name
+- **home_nickname** ```string``` - Home team's nickname
+- **home_name** ```string``` - Home team's name / school name
 
 ## /api/v1/games/[:id]
 Requests a specific game
