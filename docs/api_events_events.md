@@ -22,6 +22,7 @@
 - **radius** ```float``` - A radius (in miles) that, when paired with latitude and longitude, returns results in a medium bounding rectangle.
 - **neighborhood_id** ```int``` - Restricts results to spatial containment of given neighborhood.  [See neighborhood API](api_places_neighborhoods.md)
 - **movie** ```int``` - If set to 1, returns movie results.
+- **parent_id** ```int``` - The parent event for all recurrences
 - **recurrences** ```int``` - Returns future recurrences of event.  Note: this can slow down requests if an event has many recurrences.
 
 ##### Response Parameters
