@@ -13,6 +13,8 @@ pages:
   - Importing Events: events_imports.md
   - Other Content Types:
       - Sports: sports_exports.md
+- Gameplan (Sports):
+  - Introducing Gameplan: gameplan_home.md
 - Stories:
   - Managing and Creating Stories: stories_create.md
 - API:
@@ -31,7 +33,7 @@ pages:
     - /api/v1/neighborhoods: api_places_neighborhoods.md
   - Stories:
     - /api/v1/stories: api_content_stories.md
-  - Sports:
+  - Gameplan (Sports):
     - /api/v1/sports: api_stats_sports.md
     - /api/v1/standings: api_stats_standings.md
     - /api/v1/games: api_stats_games.md
