@@ -10,11 +10,19 @@
 ##### Response Parameters
 - **guid** ``` string ``` - Player's GUID
 - **name** ``` string ``` - Player's full name
+- **has_image** ```bool``` - True if player has image
 - **firstname** ``` string ``` - Player's first name
 - **lastname** ``` string ``` - Player's last name
 - **schools** ``` array ``` - Schools to which player belongs
 - **meta** ``` array ``` - An array of player metadata
 - **sports** ``` array ``` - List of sports the player is connected
+- **last_game** - (If single resource)
+    - id ```int``` - Game ID
+    - title ```string``` - Game title in Away Name Away Score, Home Name, Home Score
+    - stats ```array``` - List of stats from last game
+        - name ```string``` - Stat name
+        - abbrevation ```string``` - Stat abbreviation
+        - value ```float``` - Stat value
 
 ##### Example Response
 ``` json
@@ -200,6 +208,47 @@
         ]
     }
 ]
+```
+
+##### Example Response (Single Resource)
+```json
+{
+    "items": [{
+        "counter": 0,
+        "guid": "7526",
+        "has:image": true,
+        "school_name": "River Valley",
+        "school_id": "12",
+        "school_guid": "river-valley",
+        "sport_id": "0",
+        "name": "B. Amble",
+        "firstname": "B.",
+        "lastname": "Amble",
+        "grad_year": "2019",
+        "id": "7526",
+        "meta": [],
+        "sports": [],
+        "schools": {
+            "name": "River Valley",
+            "guid": "river-valley",
+            "id": "12"
+        },
+        "last_game": {
+            "id": "8359",
+            "title": "River Valley 60, Iowa-Grant 65",
+            "stats": [{
+                "name": "",
+                "abbreviation": "FGM",
+                "value": "2"
+            }, {
+                "name": "",
+                "abbreviation": "PTS",
+                "value": "4"
+            }]
+        }
+    }],
+    "pages": 1
+}
 ```
 
 ## /api/v1/players/[:id]
