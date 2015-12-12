@@ -5,8 +5,11 @@
 > The Gameplan product can scale from basic scores to the most intricate, granular data collection that allows play-by-play live gamecasts and can utilize coaches, partner sites, stringers and the general public as trusted assets to augment data acquisition.
 
 ## Managing Sports
-  - Creating and managing Sports
-  - Importing, creating and managing Schools and Teams
+  - Creating and managing sports
+  - Importing, creating and managing schools and teams
+  - Importing, creating and managing players
+  - Managing games
+  - Exporting agate and schedules
 
 ## The API
 ## Widgets
