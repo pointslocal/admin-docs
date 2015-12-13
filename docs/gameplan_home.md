@@ -11,6 +11,6 @@
   - Managing games
   - Exporting agate and schedules
 
-## The API
+## The API s
 ## Widgets
 ## Integrations
