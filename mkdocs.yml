@@ -8,7 +8,7 @@ pages:
   - Managing Events: events_events.md
   - Managing Categories:
     - Managing Categories and Stock Art: events_categories_art.md
-  - Managing Venues: events_venues.md
+
   - Managing Editorial Packages: events_packages.md
   - Exporting Events: events_exports.md
   - Importing Events: events_imports.md
