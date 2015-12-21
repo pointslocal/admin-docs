@@ -1,4 +1,4 @@
-![Gameplan](img/gameplan_logo.jpg)
+![Gameplan](img/gameplan_logo.png)
 
 > Gameplan is Pointslocal's prep and college digital-first sports module, a fully extensible stats and data tool that powers best-of-breed online sports sites.  Gameplan includes spotless reverse publishing tools for sending agate and sports data to print and avoiding duplicated effort.
 
