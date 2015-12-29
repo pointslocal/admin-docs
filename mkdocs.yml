@@ -19,6 +19,8 @@ pages:
   - Print Exports: gameplan_exports.md
 - Stories:
   - Managing and Creating Stories: stories_create.md
+- Advanced and Administrative:
+  - Managing Ontology: admin_ontology.md
 - API:
   - The API: api.md
   - Constructing Images: images.md
