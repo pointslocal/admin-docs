@@ -6,6 +6,13 @@ Events can be imported via RSS, an API (with defined rules), a Google calendar U
 ### Using the Visual Selector
 > The visual selector tool allows you to point and click at elements in the schema (title, description, date, etc.)  In some cases it can extract exactly what you want without any further work.
 
+### URL parameters
+> By utilizing URL variables, you can enable the scraping process to elegantly loop through paginated result sets.
+
+* ```{{page}}``` - A basic incrementing page counter: 1,2,3,4,5 ...
+* ```{{page:X}}``` - Will paginate by a certain multiplier.  This is most common for result sets that utilize a count per page and a ```start``` type parameter.  X represents the multiplier, so if you had a url that utilized a &start=20, &start=40 parameter, setting this to {{page:20}} would allow the scraper to iterate as such.
+* ```{{date:X}}``` - Here, X represents a date format.
+
 ### Scraping Manifests
 > All scraping processes are defined by configuration files called 'manifests.'  These are JSON files that utilize the following structure
 
