@@ -16,6 +16,7 @@ pages:
       - Sports: gameplan_exports.md
 - Gameplan (Sports):
   - Introducing Gameplan: gameplan_home.md
+  - Creating and Managing Sports: gameplan_sports.md
   - Print Exports: gameplan_exports.md
 - Stories:
   - Managing and Creating Stories: stories_create.md
