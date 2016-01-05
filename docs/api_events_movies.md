@@ -4,8 +4,11 @@
 
 ##### Request Parameters
 - **guid** ```string``` - Event date's GUID.  This is a reference to an individual recursion's GUID, not the overall event
-- **search** ```string``` - Searches event's title only.
-- **fuzzsearch** ```string``` - Expands ```search``` into description, cast, directors.
+- **search** ```string``` - Searches event's title only
+- **fuzzsearch** ```string``` - Expands ```search``` into description, cast, directors
+- **nowplaying** ```int``` - If set to true/1, will return only movies playing today
+- **future** ```int``` - Returns future release movies
+- **requireimage** ```bool``` - If set to true/1, will return only movies with images
 
 ##### Response Parameters
 - **id** ```int``` - Internal ID
