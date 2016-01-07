@@ -3,7 +3,8 @@ site_name: Pointslocal Admin Documentation
 pages:
 - Home: index.md
 - Creating Pages:
-  - Stream Templates: mediastream_templates.md
+  - Stream Templates: content_templates.md
+  - Element Templates (Components): content_element_templates.md
 - Events:
   - Managing Events: events_events.md
   - Managing Categories:
