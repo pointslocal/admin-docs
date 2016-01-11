@@ -3,6 +3,8 @@
 ### Types of Imports
 Events can be imported via RSS, an API (with defined rules), a Google calendar URL or an iCal location.
 
+## Getting events via scraping
+
 ### Using the Visual Selector
 > The visual selector tool allows you to point and click at elements in the schema (title, description, date, etc.)  In some cases it can extract exactly what you want without any further work.
 
@@ -91,3 +93,5 @@ The option ```noquote``` is set to 1 if the ```find``` value should not be escap
 
 #### javascript
 ```{ "type": "javascript", "value":"$V = $V.toUpperCase();" }```
+
+## Getting events via Google Calendars
