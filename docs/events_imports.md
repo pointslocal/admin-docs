@@ -95,3 +95,6 @@ The option ```noquote``` is set to 1 if the ```find``` value should not be escap
 ```{ "type": "javascript", "value":"$V = $V.toUpperCase();" }```
 
 ## Getting events via Google Calendars
+> Events can be imported using a Google Calendar email address.  Similar to scraped imports, these can be biased to a venue and/or category or multiple categories.
+
+![Google imports](img/events_imports_google.png)
