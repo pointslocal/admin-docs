@@ -25,6 +25,7 @@ The events section is usually used to provide time-sensitive curated lists of th
 In this example, we're looking at a temporal listicle, one with a limited shelf-life.  Since all the events included are Christmas-related and bound to finite event, this content does not have a lot of ongoing value.
 
 ### Stories
+You can also bring in aggregated stories or stories written directly in the admin into your package.  Similar to events and venues, typing in the box will bring up autosuggestions searching text and title.
 
 #### Example: Best Concerts of 2015
 In this example, we'll look at a retrospective collection of events, which allows you to turn otherwise stale, event-based content into something with more lasting edtiorial appeal.
