@@ -9,6 +9,8 @@
 - **nowplaying** ```int``` - If set to true/1, will return only movies playing today
 - **future** ```int``` - Returns future release movies
 - **requireimage** ```bool``` - If set to true/1, will return only movies with images
+- **days** ```int``` - Will look back this many days according to release date.
+- **daysmax** ```int``` - Will look this many days forward according to release date.
 
 ##### Response Parameters
 - **id** ```int``` - Internal ID
