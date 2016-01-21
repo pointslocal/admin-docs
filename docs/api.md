@@ -7,7 +7,7 @@
 - **token** ```string``` - Paramaterized request token.  Not required if session ID is supplied.
 
 ##### Request Parameters
-- **date_format** ```string``` - An alternate date format.  Unless specified, dates will be returned in YYYY-MM-DD format
+- **date_format** ```string``` - An alternate date format.  Unless specified, dates will be returned in YYYY-MM-DD format.  Date and time format defaults can be overridden in the admin.  See [Configuration](admin_configuration.md) for more.
 - **time_format** ```string``` - An alternate time format.  Unless specified, dates will be in 24:MM format
 - **format** ```enum``` - Accepts ```xml``` or ```json``` with the latter being the default
 - **count** ```int``` - Number of results per page to return
