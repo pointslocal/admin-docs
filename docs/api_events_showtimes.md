@@ -23,6 +23,8 @@
     - **stars_half** ```int``` - Number of half stars in quality rating
     - **stars_empty** ```int``` - Remainder of 4 - ```stars_full```+```stars_half```
 
+> The values ```stars_full```, ```stars_half``` and ```stars_empty``` exist to allow simple templating languages to produce loops that generate 0-star to 4-star graphics. 
+
 ##### Useful ```sort_by``` Parameters
 - **release_timestamp** - Will sort by the release date
 - **rating** - Will sort by quality rating
