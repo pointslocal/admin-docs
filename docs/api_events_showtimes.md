@@ -10,6 +10,12 @@
 - **nearby** ```int``` - If set to 1 in combination with ```venue_id```, will return nearby theaters
 
 ##### Response Parameters
+- **name** ```string``` - Theater name
+- **address** ```string``` - Theater address
+- **phone** ```string``` - Theater phone number
+- **guid** ```string``` - Theater GUID
+- **id** ```id``` - Theater ID
+- *nearby** ```bool``` - If requested with nearby=1, will show true if the result is close to requested theater.  Exact theater requested will be set to false
 - **movies** ```array```
     - **id** ```int``` - Movie ID
     - **title** ```string``` - Movie's full title
