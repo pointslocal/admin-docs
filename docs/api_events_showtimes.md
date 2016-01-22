@@ -1,6 +1,6 @@
 # /api/v1/showtimes
 
-> API endpoint for movie times.  Times are grouped by theater.
+> API endpoint for movie times.  Times are grouped by theater.  Note: pagination and count parameters do not apply to this endpoint.  It will return all available showtimes and theaters for a given request.
 
 ##### Request Parameters
 - **guid** ```string``` - Movie's GUID
