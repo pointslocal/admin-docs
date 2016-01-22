@@ -1,23 +1,31 @@
 # /api/v1/showtimes
 
-> API endpoint for movie times.
+> API endpoint for movie times.  Times are grouped by theater.
 
 ##### Request Parameters
 - **guid** ```string``` - Movie's GUID
 - **movie_id** ```int``` - Movie's ID
-- **theater_id** ```int``` - Theater's ID
+- **venue_id** ```int``` - Theater's ID
 - **date** ```string``` - Date for showtimes.  Accepts general, natural language dates
 
 ##### Response Parameters
-- **id** ```int``` - Movie ID
-- **title** ```string``` - Movie's full title
-- **guid** ```string``` - Movie's GUID
-- **venue_name** ```string``` - Name of venue/theater
-- **venue_name** ```string``` - Name of venue/theater
-- **venue_id** ```int``` - Venue/theater's internal ID
-- **venue_guid** ```string``` - GUID for venue/theater
-- **date** ```string``` - Showtime date
-- **time** ```string``` - Showtime time
+- **movies** ```array```
+    - **id** ```int``` - Movie ID
+    - **title** ```string``` - Movie's full title
+    - **guid** ```string``` - Movie's GUID
+    - **date** ```string``` - Showtime date
+    - **time** ```string``` - Showtime time
+    - **new** ```bool``` - If movie's release date +/- one day from requested date
+    - **times** ```array``` - Showtimes
+    - **genres** ```string``` - Comma-separated list of genres
+    - **qrating** ```float``` - Numerical quality rating (4-star scale; 0.0 - 4.0)
+    - **stars_full** ```int``` - Number of full stars in quality rating
+    - **stars_half** ```int``` - Number of half stars in quality rating
+    - **stars_empty** ```int``` - Remainder of 4 - ```stars_full```+```stars_half```
+
+##### Useful ```sort_by``` Parameters
+- **release_timestamp** - Will sort by the release date
+- **rating** - Will sort by quality rating
 
 ## /api/v1/showtimes/[:id]
 Requests showtimes by movie id
