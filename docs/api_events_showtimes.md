@@ -15,7 +15,7 @@
 - **phone** ```string``` - Theater phone number
 - **guid** ```string``` - Theater GUID
 - **id** ```id``` - Theater ID
-- *nearby** ```bool``` - If requested with nearby=1, will show true if the result is close to requested theater.  Exact theater requested will be set to false
+- **nearby** ```bool``` - If requested with nearby=1, will show true if the result is close to requested theater.  Exact theater requested will be set to false
 - **movies** ```array```
     - **id** ```int``` - Movie ID
     - **title** ```string``` - Movie's full title
