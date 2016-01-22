@@ -7,6 +7,7 @@
 - **movie_id** ```int``` - Movie's ID
 - **venue_id** ```int``` - Theater's ID
 - **date** ```string``` - Date for showtimes.  Accepts general, natural language dates
+- **nearby** ```int``` - If set to 1 in combination with ```venue_id```, will return nearby theaters
 
 ##### Response Parameters
 - **movies** ```array```
