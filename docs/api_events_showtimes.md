@@ -2,6 +2,8 @@
 
 > API endpoint for movie times.  Times are grouped by theater.  Note: pagination and count parameters do not apply to this endpoint.  It will return all available showtimes and theaters for a given request.
 
+> *This feature and related endpoints are only available if you have an existing relationship with TMS/Gracenote*
+
 ##### Request Parameters
 - **guid** ```string``` - Movie's GUID
 - **movie_id** ```int``` - Movie's ID
