@@ -35,6 +35,7 @@
 - **latitude** ```float``` - Event's latitude
 - **longitude** ```float``` - Event's longitude
 - **guid** ```string``` - Event's GUID
+- **has_image** ```bool``` - True if event has image associated with it
 - **image_id** ```int``` - Event image ID
 - **date** ```string``` - Event date in requested or default format ([see main API options](api.md))
 - **start_time** ```timestamp``` - Event's start time in requested or default format ([see main API options](api.md))
