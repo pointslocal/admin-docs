@@ -22,10 +22,10 @@ pages:
 - Stories:
   - Managing and Creating Stories: stories_create.md
 - Advanced and Administrative:
+  - Site Configuration: admin_configuration.md
   - Managing Ontology: admin_ontology.md
   - Setting API defaults: advanced_api_defaults.md
-- Admin:
-  - Site Configuration: admin_configuration.md
+  - Creating Rewrites: advanced_api_defaults.md
 - API:
   - The API: api.md
   - Constructing Images: images.md
