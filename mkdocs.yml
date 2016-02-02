@@ -23,6 +23,7 @@ pages:
   - Managing and Creating Stories: stories_create.md
 - Advanced and Administrative:
   - Managing Ontology: admin_ontology.md
+  - Setting API defaults: advanced_api_defaults.md
 - Admin:
   - Site Configuration: admin_configuration.md
 - API:

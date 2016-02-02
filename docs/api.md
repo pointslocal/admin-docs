@@ -21,4 +21,4 @@
 - **pages** ```int``` - Returns the number of pages available for current query
 
 ### Setting default parameters, overrides and mappings
-> It is possible to set - from admin - default values for API requests and conversions that will allow parameters to be mapped.  This is typically done for backwards compatibility with an existing API, but should be used with caution as it can produce unexpected effects for those using the API who are unfamiliar with these settings.  For more, see ()[]Setting API Defaults
+> It is possible to set - from admin - default values for API requests and conversions that will allow parameters to be mapped.  This is typically done for backwards compatibility with an existing API, but should be used with caution as it can produce unexpected effects for those using the API who are unfamiliar with these settings.  For more, see [Setting API Defaults](advanced_api_defaults.md)

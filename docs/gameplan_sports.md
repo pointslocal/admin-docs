@@ -9,8 +9,10 @@
 
 ### Managing Individual Stat Fields
 
+![](img/gameplan_sports_indfield.png)
+
 ### Managing Custom Team Fields
 
-![](img/gameplan_sports_indfield.png)
+
 
 ### Sports with Matches
