@@ -13,7 +13,7 @@ This guide won't discuss the details of Mustache, you can read about the logic-l
 Pointslocal's templates work somewhat similarly except some logic capabilities exist and templates are expressed in ```<[variable]>``` format.  In almost all cases, Mustache will suffice for presentation and a lot of what exists here is overkill for many applications.
 
 ### Element Template Syntax
-* ```<[variable]>``` - Simple variable output
+* ```<[variable]>``` - Simple variable output.  ( ```{{variable}}``` for Mustache templates. )
 
 * ```{{&[URL-PARAMETER]}}``` - Allows injecting query parameters from the URL, like {{&page}} or {{&search}}
 
