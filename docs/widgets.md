@@ -16,7 +16,7 @@
 ```
 
 #### Templating language
-> Gameplan widgets allow injection of HTML templates that utilize a very basic templating language with some minor logic rules.
+> Gameplan widgets allow injection of HTML templates that utilize a very basic templating language with some minor logic rules.  Since the API calls return JSON objects, you can use the templating language of your choice.
 
 ##### Variables
 > Variables are expressed simply as {{name}}.  So if the widget returns a variable named **school_name**, it will be rendered anywhere {{school_name}} is in the template.
@@ -61,3 +61,16 @@
 ```html
 {{team_wins.lt(3)}}This team, however, has little chance of making the playoffs{{/team_wins.lt}}
 ```
+
+### Using other templating languages
+#### Mustache
+https://github.com/janl/mustache.js/
+
+#### Jade
+https://github.com/pugjs/jade
+
+#### Hogan
+http://twitter.github.io/hogan.js/
+
+#### Handlebars
+http://handlebarsjs.com/
