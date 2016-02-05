@@ -40,3 +40,9 @@ This is useful for transferring information from stream components to the templa
 ```@@set("page_title",{{title}})```
 
 Which allows ```<[var:page_title]>``` to be accessed from other components and the overall header/footer stream template.
+
+Element templates have the ability to ```unset``` variables, as well. This can be useful as a simple way to have a default template variable that can be overwritten by individual components.
+
+```@unset("page_title")```
+
+This is fundamentally the same as ```@set("page_title",)```
