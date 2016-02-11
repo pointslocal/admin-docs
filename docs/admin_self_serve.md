@@ -1,0 +1,2 @@
+# Managing Self- Serve
+> This guide will describe how to build packages for self-serve upgrades for events and venues, allowing you to monetize enhanced presentation of various entites in the Pointslocal system.
