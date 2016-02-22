@@ -6,7 +6,9 @@ pages:
   - Stream Templates: content_templates.md
   - Element Templates (Components): content_element_templates.md
 - Events:
-  - Managing Events: events_events.md
+  - Managing Events:
+    - Managing Events: events_events.md
+    - Managing User-submitted Content: events_ugc.md
   - Managing Categories:
     - Managing Categories and Stock Art: events_categories_art.md
   - Managing Venues: events_venues.md
@@ -16,6 +18,7 @@ pages:
   - Importing Events: events_imports.md
   - Other Content Types:
       - Sports: gameplan_exports.md
+  - Managing Itineraries: events_itineraries.md
 - Gameplan (Sports):
   - Introducing Gameplan: gameplan_home.md
   - Creating and Managing Sports: gameplan_sports.md
