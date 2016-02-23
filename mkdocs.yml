@@ -26,6 +26,7 @@ pages:
   - Print Exports: gameplan_exports.md
 - Stories:
   - Managing and Creating Stories: stories_create.md
+  - Managing Story Sources And Imports: stories_sources.md
 - Advanced and Administrative:
   - Site Configuration: admin_configuration.md
   - Managing Ontology: admin_ontology.md
