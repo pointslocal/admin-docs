@@ -149,3 +149,33 @@ The document itself specifies desired formats, API options and export options br
   - **replace**
     - **find**
     - **replace**
+
+### Using Javascript Directly
+> It's possible to have the export process generate Javascript objects that you can use to produce your output directly.  When you choose to use Javascript as a templating language, the export process will create the following object:
+
+```javascript
+{ groups: [ events: [] ] }
+```
+
+> That will contain the same variables as described above.
+
+This functionality automatically includes underscore.js, enabling you to make use of its vast library of invaluable array and mapping methods.  It also includes Mustache.js, allowing both the use of the same templating language along with direct data manipulation.  A very basic example of how to produce some variable content:
+
+```javascript
+var wd = $INPUT;
+var events = [];
+for(var i = 0; i < wd.GROUPS.length; i++) {
+  for (var j = 0; j < wd.GROUPS[i].EVENTS.length; j++) {
+    var event = wd.GROUPS[i].EVENTS[j];
+    if (event.title.match(/cancel/)) {
+
+    } else {
+      events.push(event);
+    }
+  }
+}
+
+var $OUTPUT = Mustache.render("{{#events}}{{title}}{{/events}}", {events: events});
+```
+
+You'll note that ```$INPUT``` and ```$OUTPUT``` are already defined values. The default value for ```$OUTPUT``` is an empty string and ```$INPUT``` is the exported API data.
