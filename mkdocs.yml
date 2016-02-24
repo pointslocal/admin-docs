@@ -12,14 +12,14 @@ pages:
   - Managing Categories:
     - Managing Categories and Stock Art: events_categories_art.md
   - Managing Venues: events_venues.md
-  - Managing Venues Categories: events_venues_categories.md
+
   - Managing Editorial Packages: events_packages.md
-  - Self-Serve Settings: events_self_serve.md
+
   - Exporting Events: events_exports.md
   - Importing Events: events_imports.md
   - Other Content Types:
       - Sports: gameplan_exports.md
-  - Managing Itineraries: events_itineraries.md
+
 - Gameplan (Sports):
   - Introducing Gameplan: gameplan_home.md
   - Creating and Managing Sports: gameplan_sports.md
