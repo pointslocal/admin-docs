@@ -178,4 +178,4 @@ for(var i = 0; i < wd.GROUPS.length; i++) {
 var $OUTPUT = Mustache.render("{{#events}}{{title}}{{/events}}", {events: events});
 ```
 
-You'll note that ```$INPUT``` and ```$OUTPUT``` are already defined values. The default value for ```$OUTPUT``` is an empty string and ```$INPUT``` is the exported API data.
+You'll note that ```$INPUT``` and ```$OUTPUT``` are already defined values. The default value for ```$OUTPUT``` is an empty string and ```$INPUT``` is the exported API data.  ```$INPUT``` consists of a list of ```GROUPS``` with a key dependent on the type of grouping requested.  For neighborhoods, it could be ```Bushwick``` and for categories it could be ```Visual Arts```.  Each item under ```GROUPS``` contains an array of events.
