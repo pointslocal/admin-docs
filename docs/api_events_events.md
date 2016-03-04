@@ -1,6 +1,6 @@
 # /api/v1/events
 
-> API endpoint for requesting events, returning only events which have a date associated with them.  Images URLs can be created utilizing the [image construction documentation](images.md) using the context ```event.image``.
+> API endpoint for requesting events, returning only events which have a date associated with them.  Images URLs can be created utilizing the [image construction documentation](images.md) using the context ```event.image``.  If using stock art with categories, calling images with the context ```event.yield``` will first attempt to return an event's image and if none is found will then return category stock art.
 
 ##### Request Parameters
 - **search** ```string``` - Freeform search text, which will match against title, description and venue
