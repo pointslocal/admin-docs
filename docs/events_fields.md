@@ -12,4 +12,4 @@ Fields can represent a few different data types:
 Selecting this option makes the field visible for users submitting events
 
 ### Required for User-Submitted
-This makes the field *mandatory* for user submitted events
+This makes the field *mandatory* for user submitted events.  By selecting this, submitting an event will require that this field be set.
