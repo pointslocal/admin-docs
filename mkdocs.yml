@@ -8,6 +8,7 @@ pages:
 - Events:
   - Managing Events:
     - Managing Events: events_events.md
+    - Managing Custom Fields: events_fields.md
     - Managing User-submitted Content: events_ugc.md
   - Managing Categories:
     - Managing Categories and Stock Art: events_categories_art.md
