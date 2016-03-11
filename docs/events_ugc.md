@@ -8,6 +8,9 @@ Filtering your events list to just user-submitted events is simple - on any even
 
 The number in the circle indicates the # of events that do not yet have any action applied to them.  Typically those actions are setting a publish status, deleting the event or merging with an existing event.
 
+## Setting Available and Required Custom Fields
+To include custom fields (outside of Pointslocal's default set) in the user-generated form for event submission, see [Managing event fields](events_fields.md)
+
 
 [comment]: <> (Blocking Users)
 
