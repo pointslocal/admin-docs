@@ -11,9 +11,22 @@ Events can be imported via RSS, an API (with defined rules), a Google calendar U
 ### URL parameters
 > By utilizing URL variables, you can enable the scraping process to elegantly loop through paginated result sets.
 
-* ```{{page}}``` - A basic incrementing page counter: 1,2,3,4,5 ...
-* ```{{page:X}}``` - Will paginate by a certain multiplier.  This is most common for result sets that utilize a count per page and a ```start``` type parameter.  X represents the multiplier, so if you had a url that utilized a &start=20, &start=40 parameter, setting this to {{page:20}} would allow the scraper to iterate as such.
-* ```{{date:X}}``` - Here, X represents a date format.
+* ```{page}``` - A basic incrementing page counter: 1,2,3,4,5 ...
+* ```{page:X}``` - Will paginate by a certain multiplier.  This is most common for result sets that utilize a count per page and a ```start``` type parameter.  X represents the multiplier, so if you had a url that utilized a &start=20, &start=40 parameter, setting this to {{page:20}} would allow the scraper to iterate as such.
+* ```{date:X}``` - Here, X represents a date format.
+* ```{year}``` - Year in XXXX format
+* ```{month}``` - Month in XX format
+* ```{date}``` - Date in XX format
+
+#### Examples:
+Simple pagination:
+```http://www.example.com/events?page={page}```
+
+Offest & limit:
+```http://www.example.com/events?start={page:25}&count=25```
+
+Date:
+```http://www.example.com/events/{year}/{month}/{date}```
 
 ### Scraping Manifests
 > All scraping processes are defined by configuration files called 'manifests.'  These are JSON files that utilize the following structure
