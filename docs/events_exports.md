@@ -142,13 +142,25 @@ The document itself specifies desired formats, API options and export options br
     - **body**
 
 ####Post-processes
-  - **trim**
-  - **uppercase**
-  - **lowercase**
-  - **propercase**
+  > Post-process fields take the following options: a field, an element type, and the process command.  An example:
+
+  ```{ "field":"event_title", "type":"item", "process": "propercase" }```
+
+  > In the above example, a title of ```LADIES DRINK FREE``` would become ```Ladies Drink Free```
+  
+  **Options:**
+
+  - **trim** - Removes extra whitespace characters (spaces, tabs, newlines)
+  - **striplines** - Removes all line feed / carriage returns.
+  - **uppercase** - Converts text to uppercase
+  - **lowercase** - Converts text to lowercase
+  - **time(format)** - Treats text like datetime and allows formatting
+  - **propercase** - Converts text to propercase / titlecase
+  - **decodeEntities** - Removes XML encoding
   - **replace**
     - **find**
     - **replace**
+    **Special Characters** - find can accept special characters that represent character types: #space#, #digit#, #nl# #hex(hexadecimal value)#
 
 ### Using Javascript Directly
 > It's possible to have the export process generate Javascript objects that you can use to produce your output directly.  When you choose to use Javascript as a templating language, the export process will create the following object:
