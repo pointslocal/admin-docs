@@ -16,7 +16,7 @@ Events can be imported via RSS, an API (with defined rules), a Google calendar U
 * ```{date:X}``` - Here, X represents a date format.
 * ```{year}``` - Year in XXXX format
 * ```{month}``` - Month in XX format
-* ```{date}``` - Date in XX format
+* ```{day}``` - Day of month in XX format
 
 #### Examples:
 Simple pagination:
