@@ -2,6 +2,13 @@
 
 > API endpoint for requesting events, returning only events which have a date associated with them.  Images URLs can be created utilizing the [image construction documentation](images.md) using the context ```event.image``.  If using stock art with categories, calling images with the context ```event.yield``` will first attempt to return an event's image and if none is found will then return category stock art.  As with any data type that supports multiple images, the events endpoint will also accept an ```any``` request, which will a random selection from the event's images.  This is invoked with ```event.any```.
 
+> The ```event.yield``` uses the following passthru logic:
+* Event has image, else
+* Event venue has an image, else
+* Event category has an image
+
+In addition to the ```event.yield``` context, calling ```event.yield.neighbors``` will show the image of the closet event (in terms of time) that has an image from the same venue.
+
 ##### Request Parameters
 - **search** ```string``` - Freeform search text, which will match against title, description and venue
 - **guid** ```string``` - Event date's GUID.  This is a reference to an individual recursion's GUID, not the overall event
