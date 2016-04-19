@@ -42,6 +42,8 @@ In addition to the ```event.yield``` context, calling ```event.yield.neighbors``
 - **address** ```string``` - Event's address
 - **latitude** ```float``` - Event's latitude
 - **longitude** ```float``` - Event's longitude
+- **id** ```int``` - Internal numerical ID
+- **parent_id** ```int``` - Event recurrence's parent ID.
 - **guid** ```string``` - Event's GUID
 - **has_image** ```bool``` - True if event has image associated with it
 - **image_id** ```int``` - Event image ID
