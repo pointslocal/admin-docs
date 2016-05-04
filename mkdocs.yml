@@ -8,6 +8,7 @@ pages:
 - Events:
   - Managing Events:
     - Managing Events: events_events.md
+    - Managing Recurrence: events_recurrences.md
     - Managing Custom Fields: events_fields.md
     - Managing User-submitted Content: events_ugc.md
   - Managing Categories:
@@ -32,7 +33,7 @@ pages:
   - Site Configuration: admin_configuration.md
   - Managing Ontology: admin_ontology.md
   - Setting API defaults: advanced_api_defaults.md
-  - Creating Rewrites: advanced_api_defaults.md
+  - Managing Redirects: admin_redirects.md
 - API:
   - The API: api.md
   - Constructing Images: images.md
