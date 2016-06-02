@@ -22,7 +22,7 @@
 - **language** ```string``` - Spoken language for movie
 - **runtime** ```int``` - Movie's runtime, in seconds
 - **qrating** ```float``` - Movie's TMS rating, from 0 to 4
-
+- **rating** ```string``` - Movie's MPAA rating, if available
 
 ## /api/v1/movies/[:id]
 Requests a specific movie
