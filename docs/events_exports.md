@@ -1,12 +1,60 @@
 # Exporting Events
-> This guide will show you how to get your events out of Pointslocal, for use in another CMS, for syndication or for reverse print publication.
+> This guide will show you how to get your events out of Pointslocal, for use in another CMS, for syndication or for reverse print publication.  While this guide goes into some of the deeper aspects of scripting and templating, in many cases it should be possible to construct exports with very little technical expertise.
 
 Getting event data _in_ to Pointslocal involves a number of different types of variable formats and processes.  At some point you may be interested in getting that data _out_, possibly for print exports or integrations with another calendar system. Exporting all data (including Events) is handled by way of two components:
 
   - A formatted export template
   - An export configuration
+  - Optional Javascript pre-processing
 
 Export templates are accessed through any given top-level navigation area and then the Data Export secondary navigation item.
+
+On nomenclature:
+
+  - *Event Template Code*: The template for output, which should match the target's format, often a CMS.  This can be any text format and relies on the Mustache parsing language, desribed below.
+  ![Template Code](img/events_exports_templates.png)
+  - *Event Template Config*: A general configuration JSON document that tells the output process what data to get and how to group and sort it.  This is a soft wrapper around our API calls.  It should be stressed that this can be built entirely by using the selection tools at the top of the page.  More on that below:
+  ![Template Code](img/events_exports_templateconfig.png)
+  - *Preprocessing*: Optional Javascript section for manipulating data before it is parsed.  This might entail evaluating addresses to truncate state abbreviations or changing 9:00 A.M. to 9 am to match style.
+  ![Template Code](img/events_exports_preprocessing.png)
+  - *Output*: A collection of methods for delivery (email, FTP, SFTP, Download, Amazon S3, Dropbox)
+  - *Schedule*: An optional schedule for output, taking any number of dates and a time.
+
+*The Event Template Config section* normalizes an API call.  As an example, if you wanted to look for events in the next week, your API call might look like this:
+
+```http://yoursite/api/v1/events?start=today&end=+1%20week```
+
+In the config this denormalizes as:
+
+```
+{ api: {
+    start: 'today',
+    end: '+1 week'
+  }
+}
+```
+
+While much of this is handled through the visual selectors, it can be easy to translate an existing API call to a template configuration.
+
+## Building a Request
+Producing the actual content you wish to export is handled through one of two mechanisms:
+
+- A standard API call
+- Hand selecting events for export in your queue
+
+You can override any API request with your local queue.  So if your export is set to call ```/events``` with a start of ```today``` and an end of ```next week``` and you export with a queue of non-matching events, it will yield to the latter.
+
+To build an API call, from the edit or create export screen you can select your endpoint, which will then show you the optional parameters you can use to compile the data you would like.
+
+![Template Code](img/events_exports_api.png)
+
+In the example above, by selecting any of the options associated with the API, you will automatically build a configuration file.  
+
+![Template Code](img/events_exports_api3.png)
+
+To see if this data meets expectations, hit the preview button:
+
+![Template Code](img/events_exports_api4.png)
 
 ## Export Templates
 An export template represents the desired format for outputting the data.  An example may be an HTML or XML format.  More frequently, though, it relates to a print system's format.  Pointslocal can accommodate almost any format that is _text-based_ and in some cases binary formats as well, although this is less common and not officially supported.
@@ -95,7 +143,11 @@ Within event items these are all present, prefaced by **event_venue_** For examp
   - **event_venue_description** ```string``` Description or short summary of venue.
 
 ## Export Configuration
-On any Data Export item's page, beneath the template, lies an _optional_ configuation section.  While this is optional, for most cases it will be necessary to access the precise data you wish to export.
+At the top of the export template edit page there is a group of options that allow you to select the precise type of data you wish to export.  Using this process constructs a configuration for the export process itself.
+
+After selecting the options that describes the data you wish to export, you can preview that and see some of the data that's returned by the API.  Note that this is not grouped but is sorted.  This section exists to give insight into what the export call will produce.
+
+If you use this process, there's no need to do any manual editing of the JSON configuration.
 
 The configuration itself is a JSON document; if the JSON is invalid the entire config will be bypassed, so it makes sense to validate your JSON against a JSON linter.  In most cases these configurations will not be modified after an initial setup.
 
@@ -103,7 +155,7 @@ The document itself specifies desired formats, API options and export options br
 
 - API
 - Configuration
-- Output
+- Outputs
 
 ####API
   - **type** Specifies the type of data you'd like to access. For events it's simply 'events'.
@@ -123,7 +175,7 @@ The document itself specifies desired formats, API options and export options br
   - **timeFormat** Specifies the format for all times
   - **timeConditions** ```array``` A list of conditions as with **dateConditions** but applying to time values.
 
-####Output
+####Outputs
   - **ftp** Sends file via FTP.
     - **host**
     - **port**
@@ -166,26 +218,28 @@ The document itself specifies desired formats, API options and export options br
 > It's possible to have the export process generate Javascript objects that you can use to produce your output directly.  When you choose to use Javascript as a templating language, the export process will create the following object:
 
 ```javascript
-{ groups: [ events: [] ] }
+{ $groups: [ $events: [] ] }
 ```
 
 > That will contain the same variables as described above.
 
-This functionality automatically includes underscore.js, enabling you to make use of its vast library of invaluable array and mapping methods.  It also includes Mustache.js, allowing both the use of the same templating language along with direct data manipulation.  A very basic example of how to produce some variable content:
+This functionality automatically includes underscore.js, enabling you to make use of its vast library of invaluable array and mapping methods.  It also includes Mustache.js, allowing both the use of the same templating language along with direct data manipulation.  Here is a very basic example of how to produce some variable content, which ignores any event that contains the word "cancel" in its title:
 
 ```javascript
-var wd = $INPUT;
 var events = [];
-for(var i = 0; i < wd.GROUPS.length; i++) {
-  for (var j = 0; j < wd.GROUPS[i].EVENTS.length; j++) {
-    var event = wd.GROUPS[i].EVENTS[j];
+for(var i = 0; i < $groups.length; i++) {
+  for (var j = 0; j < $groups[i].$events.length; j++) {
+    var event = $groups[i].$events[j];
     if (event.title.match(/cancel/)) {
 
     } else {
       events.push(event);
     }
   }
+$groups[i]['$events'] = events
 }
+
+
 
 var $OUTPUT = Mustache.render("{{#events}}{{title}}{{/events}}", {events: events});
 ```
