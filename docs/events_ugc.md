@@ -11,6 +11,9 @@ The number in the circle indicates the # of events that do not yet have any acti
 ## Setting Available and Required Custom Fields
 To include custom fields (outside of Pointslocal's default set) in the user-generated form for event submission, see [Managing event fields](events_fields.md)
 
+## Autopublishing
+Events from the UGC queue can be set to automatically publish some time after submission.  This allows for a more passive publication process, wherein unwanted events are manually removed and the remainder automatically published.  Auto-update rules still apply - in other words, if an event has been edited from the admin, it will not autopublish. 
+
 
 [comment]: <> (Blocking Users)
 
