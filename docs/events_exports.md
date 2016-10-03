@@ -223,7 +223,10 @@ The document itself specifies desired formats, API options and export options br
 
 > That will contain the same variables as described above.
 
-This functionality automatically includes underscore.js, enabling you to make use of its vast library of invaluable array and mapping methods.  It also includes Mustache.js, allowing both the use of the same templating language along with direct data manipulation.  Here is a very basic example of how to produce some variable content, which ignores any event that contains the word "cancel" in its title:
+This functionality automatically includes underscore.js, enabling you to make use of its vast library of invaluable array and mapping methods.  It also includes Mustache.js, allowing both the use of the same templating language along with direct data manipulation.  For using dates and times, we package in [moment.js](http://momentjs.com/)moment.js as well.
+
+
+Here is a very basic example of how to produce some variable content, which ignores any event that contains the word "cancel" in its title:
 
 ```javascript
 var events = [];
@@ -245,3 +248,11 @@ var $OUTPUT = Mustache.render("{{#events}}{{title}}{{/events}}", {events: events
 ```
 
 You'll note that ```$INPUT``` and ```$OUTPUT``` are already defined values. The default value for ```$OUTPUT``` is an empty string and ```$INPUT``` is the exported API data.  ```$INPUT``` consists of a list of ```GROUPS``` with a key dependent on the type of grouping requested.  For neighborhoods, it could be ```Bushwick``` and for categories it could be ```Visual Arts```.  Each item under ```GROUPS``` contains an array of events.
+
+There are some basic helper functions that will allow you to perform regular expression replacements, notably translateTable(), which can be used as follows to make style changes:
+
+```javascript
+var table = {
+  "(Street|street|Strt|St[^\.])": "St.",
+  "(Ave[^\.]|Avenue)": "Ave."
+}
