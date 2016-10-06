@@ -7,7 +7,9 @@
 - **search** ```string``` - Text string that matches neigborhood names
 - **latitude** ```float``` - When paired with longitude, returns neighborhoods that contain the lat/lon point
 - **longitude** ```float``` - When paired with latitude, returns neighborhoods that contain the lat/lon point
+- **radius** ```float``` - When paired with latitude and longitude, returns neighborhods that are within the requested area
 - **suppress_geo** ```int``` - When set to 1, results will not include polygon data.  Default: 0
+- **ids** ```string``` - A comma separated list of neighborhood IDs
 
 ##### Response Parameters
 - **id** ```string``` - Neighborhood's ID
