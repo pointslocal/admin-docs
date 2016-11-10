@@ -6,7 +6,7 @@ Events can be imported via RSS, an API (with defined rules), a Google calendar U
 ## Getting events via scraping
 
 ### Using the Visual Selector
-> The visual selector tool allows you to point and click at elements in the schema (title, description, date, etc.)  In some cases it can extract exactly what you want without any further work.
+> The visual selector tool allows you to point and click at elements in the schema (title, description, date, etc.)  In some cases it can extract exactly what you want without any further work.  A guide to this process [can be found here](/events_imports_scraping).
 
 ### URL parameters
 > By utilizing URL variables, you can enable the scraping process to elegantly loop through paginated result sets.

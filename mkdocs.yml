@@ -18,7 +18,9 @@ pages:
   - Managing Editorial Packages: events_packages.md
 
   - Exporting Events: events_exports.md
-  - Importing Events: events_imports.md
+  - Importing Events: 
+    - Scraping with Manifests: events_imports.md
+    - Scraping with Chrome Extension: events_imports_scraping.md
   - Other Content Types:
       - Sports: gameplan_exports.md
 
