@@ -16,11 +16,17 @@ In addition to the ```event.yield``` context, calling ```event.yield.neighbors``
 - **start** ```string``` - Event start date
 - **end** ```string``` - Event end date.  Completes start <-> end range
 - **date** ```string``` - Event's date
+- **source** ```string``` - Event import or creation source (e.g. ```source=Users```)
+- **sources** ```string``` - Comma-separated list of ```source```
 - **range** ```string``` - Start and end dates separated by '-'.  Example: 20010101-20010102
 - **when** ```string``` - Accepts natural language relative dates like ```this week``` or ```next month```
 - **category** ```string``` - Returns events in category by category GUID [See category API](api_events_categories.md)
 - **category_id** ```int``` - Returns events from this category. [See category API](api_events_categories.md)
+- **categories** ```string``` - Comma-separated list of ```category_id```
+- **tag** ```string``` - Free-form tag, set from admin.
 - **featured** ```int``` - Returns currently featured events if set to 1. Default: 0
+- **featured_venue** ```int``` - Returns events from currently-featured venues if set to 1.  Default: 0
+- **editor** ```int``` - Returns editor's picks if set to 1. Default: 0
 - **popular** ```int``` - Returns the most popular events if set to 1.  Default: 0 *Note: setting this to 1 implicitly sorts results by popularity in descending order*
 - **popcategory** ```int``` - Selects only popular events from this category
 - **popdays** ```int``` - Number of days back to look for popular events.  Default: 1, Maximum: 14
@@ -30,6 +36,7 @@ In addition to the ```event.yield``` context, calling ```event.yield.neighbors``
 - **latitude** ```float``` - Searches within longitude/latitude if paired radius
 - **longitude** ```float``` - Searches within longitude/latitude if paired with radius
 - **radius** ```float``` - A radius (in miles) that, when paired with latitude and longitude, returns results in a medium bounding rectangle
+- **neighborhood** ```string``` - Neighborhood GUID. [See neighborhood API](api_places_neighborhoods.md)
 - **neighborhood_id** ```int``` - Restricts results to spatial containment of given neighborhood.  [See neighborhood API](api_places_neighborhoods.md)
 - **movie** ```int``` - If set to 1, returns movie results
 - **parent_id** ```int``` - The parent event for all recurrences
