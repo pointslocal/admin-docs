@@ -12,6 +12,7 @@ In addition to the ```event.yield``` context, calling ```event.yield.neighbors``
 
 ##### Request Parameters
 - **search** ```string``` - Freeform search text, which will match against title, description and venue
+- **search_tags** ```int``` - Includes tags in search if set to 1. Default: 0
 - **guid** ```string``` - Event date's GUID.  This is a reference to an individual recursion's GUID, not the overall event
 - **start** ```string``` - Event start date
 - **end** ```string``` - Event end date.  Completes start <-> end range
