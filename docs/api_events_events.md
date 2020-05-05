@@ -42,6 +42,12 @@ In addition to the ```event.yield``` context, calling ```event.yield.neighbors``
 - **movie** ```int``` - If set to 1, returns movie results
 - **parent_id** ```int``` - The parent event for all recurrences
 - **recurrences** ```int``` - Returns future recurrences of event.  Note: this can slow down requests if an event has many recurrences
+- **virtual** ```int``` - If set to 1, returns only virtual results, which are suppressed by default
+- **include_virtual** ```int``` - If set to 1, includes virtual results in set, which are suppressed by default
+- **cancelled** ```int``` - If set to 1, returns only cancelled results, which are suppressed by default
+- **include_cancelled** ```int``` - If set to 1, includes cancelled results in set, which are suppressed by default
+- **postponed** ```int``` - If set to 1, returns only postponed results, which are suppressed by default
+- **include_postponed** ```int``` - If set to 1, includes postponed results in set, which are suppressed by default
 
 ##### Response Parameters
 - **title** ```string``` - Event's title
@@ -70,6 +76,9 @@ In addition to the ```event.yield``` context, calling ```event.yield.neighbors``
 - **tags** ```array``` - A list of tags associated with event
 - **movie_guid** ```string``` - If ```movie=1``` is set, will return internal GUID of movie
 - **movie_id** ```int``` - If ```movie=1``` is set, will return numerical ID of movie ([see movie API options](api_events_movies.md))
+- **virtual** ```bool``` - Event is virtual
+- **cancelled** ```bool``` - Event is cancelled
+- **postponed** ```bool``` - Event is postponed
 
 ## /api/v1/events/[:id]
 Requests a specific event
